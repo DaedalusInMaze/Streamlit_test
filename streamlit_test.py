@@ -8,7 +8,7 @@ import eda_tools.missing_analysis as ma
 import eda_tools.EDA_tool as eda
 
 df = pd.read_csv('test.csv', index_col = 0)
-st.dataframe(sample)
+st.dataframe(df)
 
 # Profile Report
 profile = ProfileReport(sample, explorative=False, config_file="profile_config/yprofile_config_default.yaml")
