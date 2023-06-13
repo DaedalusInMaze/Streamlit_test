@@ -2,7 +2,6 @@
 import pandas as pd
 import numpy as np  
 from ydata_profiling import ProfileReport
-from streamlit_pandas_profiling import st_profile_report
 import streamlit as st
 import streamlit.components.v1 as components
 import eda_tools.missing_analysis as ma
