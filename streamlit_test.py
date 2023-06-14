@@ -11,6 +11,6 @@ df = pd.read_csv('test.csv', index_col = 0)
 st.dataframe(df)
 
 # Profile Report
-profile = ProfileReport(test, explorative=False, config_file="profile_config/yprofile_config_default.yaml")
+profile = ProfileReport(df, explorative=False, config_file="profile_config/yprofile_config_default.yaml")
 #st_profile_report(profile)
 components.html(profile.to_notebook_iframe())
